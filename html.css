@@ -12,6 +12,7 @@ body {
     width: fit-content;
     margin: 0;
     padding: 0;
+    animation: marcher 2s infinite ease-in-out;
 }
 .pixel-art .row {
     margin: 0;
@@ -26,6 +27,43 @@ body {
     padding: 0;
     border: 1px solid white;
     box-sizing: border-box;
+}
+@keyframes changementcouleur {
+    0% {
+        background-color: #25a9df;
+    }
+    25% {
+        background-color: orange;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: pink;
+    }
+    100% {
+        background-color: #25a9df;
+    }
+}
+.bleu,
+.orange,
+.vert,
+.rose,
+.rouge,
+.bleu-foncé,
+.jaune {
+    animation: changementcouleur 4s infinite linear;
+}
+@keyframes marcher {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .bleu {
     background-color: #25a9df;
