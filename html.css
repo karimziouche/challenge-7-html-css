@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+}
+.toutes-les-images {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    justify-content: center;
+    width: 100;
+}
+.pixel-art {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.pixel-art .row {
+    margin: 0;
+    flex-wrap: nowrap;
+    display : flex;
+}
+.pixel-art .col {
+    flex: 0 0 1.5vw;
+    width: 1.5vw;
+    max-width: 1.5vw;
+    height: 1.5vw;
+    padding: 0;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+.bleu {
+    background-color: #25a9df;
+}
+.blanc {
+    background-color: white;
+}
+.orange {
+    background-color: orange;
+}
+.vert {
+    background-color: #009046;
+}
+.rose {
+    background-color: pink;
+}
+.rouge {
+    background-color: red;
+}
+.bleu-foncé {
+    background-color: blue;
+}
+.jaune {
+    background-color: yellow;
+}
